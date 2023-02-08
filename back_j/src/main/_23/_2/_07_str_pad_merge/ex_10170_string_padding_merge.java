@@ -1,6 +1,6 @@
-package main._23._2._07;
+package main._23._2._07_str_pad_merge;
 
-public class ex_10170 {
+public class ex_10170_string_padding_merge {
 
     static String paddingString(String str, int pad){
 
