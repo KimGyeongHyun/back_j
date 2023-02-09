@@ -1,4 +1,4 @@
-package main._23._2._09;
+package main._23._2._09_string;
 import java.util.Scanner;
 
 public class ex_02499 {
