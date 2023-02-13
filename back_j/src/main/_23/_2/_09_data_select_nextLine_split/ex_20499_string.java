@@ -1,4 +1,4 @@
-package main._23._2._09_string;
+package main._23._2._09_data_select_nextLine_split;
 import java.util.Scanner;
 
 public class ex_20499_string {
