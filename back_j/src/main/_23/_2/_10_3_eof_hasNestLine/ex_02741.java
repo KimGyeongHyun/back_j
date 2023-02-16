@@ -1,7 +1,7 @@
-package main._23._2._10_3;
+package main._23._2._10_3_eof_hasNestLine;
 import java.util.Scanner;
 
-public class ex_02742 {
+public class ex_02741 {
     
 
     public static void main(String[] args) {
@@ -9,6 +9,6 @@ public class ex_02742 {
 
         int repeat = s.nextInt();
 
-        while (repeat-- > 0) System.out.println(repeat+1);
+        for (int i = 1; i <= repeat; i++) System.out.println(i);
     }
 }
