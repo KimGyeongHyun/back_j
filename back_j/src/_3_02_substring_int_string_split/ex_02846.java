@@ -1,4 +1,4 @@
-package _3_02_substring_int;
+package _3_02_substring_int_string_split;
 import java.util.Scanner;
 
 public class ex_02846 {
