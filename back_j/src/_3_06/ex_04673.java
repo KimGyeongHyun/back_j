@@ -13,21 +13,13 @@ public class ex_04673 {
     }
 
     static boolean is_not_self(int n) {
-        if (n < 10){
-            if (n%2 == 0) return false;
-            else return true;
-        }
-        if (n < 30) {
-            if (n==20) return true;
-            else return false;
-        }
 
         int index = n / 10;
         int pre_cr = pred_n(index);
 
-        while (30 <= pre_cr + 30 && index != 0) {
-            if (0 <= n - pre_cr && n - pre_cr <= 18 && (pre_cr - n) % 2 == 0) return false;
-            pre_cr = pred_n(index--);
+        while (pre_cr + 25 > n && 0 <= index) {
+            if (pre_cr <= n && n <= pre_cr + 18 && (pre_cr - n) % 2 == 0) return false;
+            pre_cr = pred_n(--index);
         }
         
         return true;
