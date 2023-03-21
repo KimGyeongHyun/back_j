@@ -1,0 +1,28 @@
+package _4_03;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+
+public class ex_01427 {
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        
+        int n = Integer.parseInt(br.readLine());
+        int[] number_list = new int[10];
+
+        while (n != 0) {
+            number_list[n%10]++;
+            n /= 10;
+        }
+
+        for (int i = 9; i >= 0; i--) {
+            while (number_list[i]-- > 0) bw.write(Integer.toString(i));
+        }
+
+        bw.flush();
+        bw.close();
+    }
+}
