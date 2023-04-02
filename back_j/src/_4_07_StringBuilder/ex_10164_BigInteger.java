@@ -4,43 +4,44 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.math.BigInteger;
 import java.util.StringTokenizer;
 import java.util.Arrays;
 
-public class ex_10164 {
+public class ex_10164_BigInteger {
     
-    static long[] factorial_list = new long[31];
+    static BigInteger[] factorial_list = new BigInteger[31];
 
     static int get_length() {
         int index = 1;
-        while (index <= 14 && factorial_list[index+1] != 1) index++;
+        while (index <= 14 && factorial_list[index+1] != BigInteger.ONE) index++;
         return index;
     }
 
-    static long factorial(int n) {
+    static BigInteger factorial(int n) {
 
         int index = get_length();
 
         if (n <= index) return factorial_list[n];
 
-        long value = n * factorial(n-1);
+        BigInteger value = factorial(n-1).multiply(BigInteger.valueOf(n));
         factorial_list[n] = value;
 
         return value;
     }
 
-    static long combination(int n, int r) {
+    static BigInteger combination(int n, int r) {
 
-        if (n <= 1 || n == r || r == 0) return 1;
+        if (n <= 1 || n == r || r == 0) return BigInteger.ONE;
 
-        return factorial(n) / (factorial(r) * factorial(n-r));
+        return factorial(n).divide(factorial(r).multiply(factorial(n-r)));
 
     }
 
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        Arrays.fill(factorial_list, 1);
+        Arrays.fill(factorial_list, BigInteger.ONE);
 
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
@@ -52,9 +53,9 @@ public class ex_10164 {
         int x = (k-1) % m;
         int y = (k-1) / m;
 
-        long value = combination(x+y, y) * combination(m+n-2-x-y, m-1-x);
+        BigInteger value = combination(x+y, y).multiply(combination(m+n-2-x-y, m-1-x));
 
-        bw.write(Long.toString(value));
+        bw.write(value.toString());
         bw.flush();
         bw.close();
     }
