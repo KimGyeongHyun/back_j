@@ -1,4 +1,4 @@
-package _4_07_StringBuilder;
+package _4_07_Others;
 import java.util.Scanner;
 import java.lang.StringBuilder;
 import java.io.BufferedWriter;
