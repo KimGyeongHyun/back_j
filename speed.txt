@@ -1,0 +1,6 @@
+psvm : main 문
+sout : System.out.println();
+fori : for i 문
+fore : for element 문
+shift + alt + (up, down) : 한줄 복사
+alt + (up, down) : 한줄 이동
