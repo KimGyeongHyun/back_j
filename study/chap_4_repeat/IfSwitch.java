@@ -1,4 +1,4 @@
-package study.chap_4;
+package study.chap_4_repeat;
 
 public class IfSwitch {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package study.chap_8.Creature;
+package study.chap_8_abs_interface.Creature;
 
 // Creature 상속 받는 추상클래스 Animal
 public abstract class Animal extends Creature {

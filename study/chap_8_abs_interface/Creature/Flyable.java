@@ -1,4 +1,4 @@
-package study.chap_8.Creature;
+package study.chap_8_abs_interface.Creature;
 
 public interface Flyable {
     void fly(int yDistance);

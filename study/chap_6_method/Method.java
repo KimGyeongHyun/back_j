@@ -1,4 +1,4 @@
-package study.chap_6;
+package study.chap_6_method;
 
 public class Method {
 

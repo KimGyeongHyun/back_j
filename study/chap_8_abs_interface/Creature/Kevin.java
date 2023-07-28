@@ -1,4 +1,4 @@
-package study.chap_8.Creature;
+package study.chap_8_abs_interface.Creature;
 
 public class Kevin extends Human implements Programmer, Swimable{
     public Kevin(int x, int y, int age) {super(x, y, age);}

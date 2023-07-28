@@ -1,4 +1,4 @@
-package study.chap_5;
+package study.chap_5_arr;
 
 public class ArrayPart {
     public static void main(String[] args) {

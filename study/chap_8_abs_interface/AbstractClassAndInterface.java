@@ -1,7 +1,7 @@
-package study.chap_8;
-import study.chap_8.Creature.Pigeon;
-import study.chap_8.Creature.Turtle;
-import study.chap_8.Creature.Kevin;
+package study.chap_8_abs_interface;
+import study.chap_8_abs_interface.Creature.Kevin;
+import study.chap_8_abs_interface.Creature.Pigeon;
+import study.chap_8_abs_interface.Creature.Turtle;
 
 
 public class AbstractClassAndInterface {

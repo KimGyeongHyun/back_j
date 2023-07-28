@@ -1,4 +1,4 @@
-package study.chap_7;
+package study.chap_7_class;
 
 class Student {
     String name;
