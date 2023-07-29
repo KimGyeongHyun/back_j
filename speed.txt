@@ -4,3 +4,4 @@ fori : for i 문
 fore : for element 문
 shift + alt + (up, down) : 한줄 복사
 alt + (up, down) : 한줄 이동
+f2 : refactoring
