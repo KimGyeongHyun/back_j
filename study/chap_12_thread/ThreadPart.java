@@ -228,5 +228,3 @@ public class ThreadPart {
         ", mt2:" + mt2.isInterrupted() + "]");
     }
 }
-
-
